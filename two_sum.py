@@ -8,6 +8,4 @@ class Solution:
                 l+=1
             else:
                 return [l+1,r+1]
-check=Solution()
-print(check.twoSum([-1,0],-1))
           
