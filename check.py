@@ -1,15 +1,15 @@
-arr=list(map(int,input().split(' ')))
-def max_sum(arr,k):
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        char_set = set()
+        left = 0
+        max_len = 0
 
-    window=sum(arr[:k])
-    maxs=window
-    for i in range(len(arr)-k):
-        window=window-arr[i]+arr[i+k]
-        maxs=max(window,maxs)
+        for right in range(len(s)):
+            while s[right] in char_set:
+                char_set.remove(s[left])
+                left += 1
 
-    return maxs
+            char_set.add(s[right])
+            max_len = max(max_len, right - left + 1)
 
-
-# arr = [5, 2, -1, 0, 3]
-k = 4
-print(max_sum(arr, k))
+        return max_len
