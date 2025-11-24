@@ -1,2 +1,2 @@
-nums=[2,3,4]
-print(sum(nums[2:])-4)
+t=int("1001",2)
+print(t)
