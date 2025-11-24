@@ -9,9 +9,3 @@ class NumArray:
             result+=self.nums[i]
 
         return result
-        
-
-# Your NumArray object will be instantiated and called as such:
-obj = NumArray([-2,0,3,-5,2,-1])
-print(obj.sumRange(0, 5))
-print(obj.sumRange(2, 5))
