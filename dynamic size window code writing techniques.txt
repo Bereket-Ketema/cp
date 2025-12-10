@@ -1,0 +1,12 @@
+left = 0
+for right in range(len(nums)):
+
+    # 1. Expand window using right pointer
+    ... update sum or count or frequency ...
+
+    # 2. Shrink window until condition is valid
+    while (window is invalid or valid depending on the problem):
+        ... update answer ...
+        ... shrink window from the left ...
+
+# 3. Return answer
