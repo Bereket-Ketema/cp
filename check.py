@@ -1,2 +1,2 @@
-a=[1,2,3,4]
-print(a[0:4])
+s='berekete'
+print(s[2:].index('e')+len(s[:2]))
